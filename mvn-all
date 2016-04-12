@@ -1,0 +1,5 @@
+#!/bin/sh
+
+for p in $(cat demo/plugins.txt | perl -pe s/:.+//g | grep -E 'workflow-|pipeline-' | grep -v 'pipeline-rest-api' | grep -v 'workflow-aggregator'); do
+  mvn -f ../$p-plugin "$@" -DskipTests
+done

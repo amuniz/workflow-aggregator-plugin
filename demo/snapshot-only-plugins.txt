@@ -1,1 +1,1 @@
-pipeline-milestone-step:1.0-SNAPSHOT
+pipeline-milestone-step
